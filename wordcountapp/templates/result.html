@@ -1,0 +1,9 @@
+<h2>you have total {{textlength}} words in your paragraph</h2>
+<h3>paragraph</h3>
+{{fulltext}}
+<h4>contained words</h4>
+{% for word,howmany in dictionary %}
+{{word}}:{{howmany}}
+<br>
+{% endfor%}
+<a href="{% url 'home'%}" >Home</a>
